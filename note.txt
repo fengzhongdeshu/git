@@ -13,4 +13,9 @@
 	git checkout dev
 	git push origin dev
 	#我们再去远程看下，在branch处，就会显示成2，我们点击进去看一下，会有一个master和一个dev 分支
+5:查看日志
+	#这样可以查看日志，但是这样查看日志太多，于是我们可以使用另外一个方式
+	git log
+	#这样查看的日志就是commit时的一个说明
+	git log --pretty=oneline
 	
