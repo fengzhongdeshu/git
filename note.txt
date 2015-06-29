@@ -1,0 +1,16 @@
+我用这一种方式建立了一个版本管理库
+1：在github上建立了一个仓库
+2:在本地的一个路径下，git colone git@github.com:fengzhongdesu/git.git
+3:已经把远程的空仓库克隆到了本地
+4:在本地的master分支上创建一个文件:
+	#在本地添加文件，并且提交到本地的master分支
+	git add .
+	git commit -m "first commit"
+	#提交到远程，现在远程是空库，也没有master分支，我们可以把本地的master提交到远程的master,注意当我们在master分支
+	git push origin master	
+	#我们可以想要在远程也创建一个dev分支，我们可以直接在本地做一个dev分支，然后提交到远程即可
+	git branch dev
+	git checkout dev
+	git push origin dev
+	#我们再去远程看下，在branch处，就会显示成2，我们点击进去看一下，会有一个master和一个dev 分支
+	
